@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="w-full">
+        <!-- skip button -->
+        <a
+          class="text-[16px] underline float-right text-[#9FB2FF] font-medium"
+          href="./page3.html"
+          >Skip</a
+        >
+      </header>
+      <div class="my-16 flex justify-center items-center">
+        <img class="w-full h-full" src="./assets/page2Img.svg" alt="" />
+      </div>
+      <section>
+        <h3 class="font-semibold text-[20px]">Get Burn</h3>
+        <p class="font-medium text-justify text-[#787878] mt-3 text-[16px]">
+          Let’s keep burning to achieve your goals, it hurts only temporarily,
+          if you give up now you will be in pain forever
+        </p>
+      </section>
+      <div class="w-full mt-auto mb-6">
+        <!-- Go to next page button -->
+        <a href="./page3.html" class="float-right">
+          <img src="./assets/page2Btn.svg" alt="" />
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

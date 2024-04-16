@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- title -->
+      <h2 class="font-semibold mb-4 text-[20px] w-full text-left">
+        Welcome Back
+      </h2>
+      <form action="#" class="w-full">
+        <!-- Email -->
+        <input
+          type="email"
+          class="w-full border-transparent focus:border-transparent focus:ring-0 rounded-xl font-semibold text-sm my-4 p-4 border-none bg-[#F1F1F1]"
+          placeholder="Email"
+          aria-label="email"
+          name=""
+          id=""
+        />
+        <!-- Password -->
+        <div
+          class="flex w-full justify-between p-0 items-center my-4 rounded-xl overflow-hidden bg-[#F1F1F1]"
+        >
+          <input
+            type="password"
+            class="w-full outline-none border-none focus:border-none border-transparent focus:border-transparent focus:ring-0 focus:outline-none font-semibold text-sm p-4 bg-[#F1F1F1]"
+            placeholder="Password"
+            aria-label="password"
+            name=""
+            id=""
+          />
+          <!-- hide password icon -->
+          <img
+            src="./assets/eye-off.svg"
+            class="h-[16px] w-[16px] mr-4"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center mt-0 gap-3">
+          <a href="#" class="text-[12px] underline"> Forgot your password?</a>
+        </div>
+      </form>
+      <footer class="mt-auto w-full">
+        <!-- sign In button -->
+        <a href="./page5.html"><button class="btn">Sign In</button></a>
+        <div class="flex my-6 justify-center items-center">
+          <span class="border border-[#7F7F7F] w-full"></span>
+          <p class="text-[12px] mx-2 font-medium">Or</p>
+          <span class="border border-[#7F7F7F] w-full"></span>
+        </div>
+        <!-- Social Media links -->
+        <div class="flex justify-center gap-4 my-6 items-center">
+          <div
+            class="h-[44px] w-[44px] border-2 border-[#7F7F7F] rounded-lg p-2"
+          >
+            <img class="w-full h-full" src="./assets/googleIcons.svg" alt="" />
+          </div>
+          <div
+            class="h-[44px] w-[44px] border-2 border-[#7F7F7F] rounded-lg p-2"
+          >
+            <img class="w-full h-full" src="./assets/facebookIcon.svg" alt="" />
+          </div>
+        </div>
+        <p class="text-center text-[12px] mb-2">
+          Don’t have an account yet?
+          <a href="./page3.html" class="text-[#93A9FF] underline"
+            >Create an account</a
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

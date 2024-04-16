@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- title -->
+      <h2 class="font-semibold mb-4 text-[20px] w-full text-left">
+        Create an account
+      </h2>
+      <form action="#" class="w-full">
+        <!-- First name -->
+        <input
+          type="text"
+          class="w-full rounded-xl font-semibold text-sm my-4 p-4 border-none bg-[#F1F1F1]"
+          placeholder="First Name"
+          aria-label="firstname"
+          name=""
+          id=""
+        />
+        <!-- Last name -->
+        <input
+          type="text"
+          class="w-full rounded-xl font-semibold text-sm my-4 p-4 border-none bg-[#F1F1F1]"
+          placeholder="Last Name"
+          aria-label="lastname"
+          name=""
+          id=""
+        />
+        <!-- Email -->
+        <input
+          type="email"
+          class="w-full rounded-xl font-semibold text-sm my-4 p-4 border-none bg-[#F1F1F1]"
+          placeholder="Email"
+          aria-label="email"
+          name=""
+          id=""
+        />
+        <!-- Password -->
+        <input
+          type="password"
+          class="w-full rounded-xl font-semibold text-sm my-4 p-4 border-none bg-[#F1F1F1]"
+          placeholder="Password"
+          aria-label="password"
+          name=""
+          id=""
+        />
+        <!-- I agree checkbox -->
+        <div class="flex items-center my-4 gap-3">
+          <input
+            class="rounded-[5px] h-[22px] w-[22px]"
+            type="checkbox"
+            name=""
+            id=""
+          />
+          <p class="text-[12px] text-[#7F7F7F]">
+            By proceeding, I agree to all
+            <a href="#" class="text-[#93A9FF] underline">T&C</a> and
+            <a href="#" class="text-[#93A9FF] underline"> Privacy Policy</a>
+          </p>
+        </div>
+      </form>
+      <footer class="mt-auto w-full">
+        <a href="./page4.html" class="">
+          <button class="btn">Create an Account</button>
+        </a>
+        <div class="flex my-6 justify-center items-center">
+          <span class="border border-[#7F7F7F] w-full"></span>
+          <p class="text-[12px] mx-2 font-medium">Or</p>
+          <span class="border border-[#7F7F7F] w-full"></span>
+        </div>
+        <!-- social-media button -->
+        <div class="flex justify-center gap-4 my-6 items-center">
+          <div
+            class="h-[44px] w-[44px] border-2 border-[#7F7F7F] rounded-lg p-2"
+          >
+            <img class="w-full h-full" src="./assets/googleIcons.svg" alt="" />
+          </div>
+          <div
+            class="h-[44px] w-[44px] border-2 border-[#7F7F7F] rounded-lg p-2"
+          >
+            <img class="w-full h-full" src="./assets/facebookIcon.svg" alt="" />
+          </div>
+        </div>
+        <p class="text-center text-[12px] mb-2">
+          Already have an account?
+          <a href="./page4.html" class="text-[#93A9FF] underline">Login</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

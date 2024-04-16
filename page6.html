@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 6</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="container relative">
+      <!-- Bottom Nav bar -->
+      <nav class="w-screen bg-[#ffffff] z-20 fixed shadow-sm bottom-0 left-0">
+        <ul class="flex justify-evenly relative items-center w-full p-1">
+          <li class="p-4 cursor-pointer">
+            <img src="./assets/homeIcon.svg" alt="" />
+          </li>
+          <li class="p-4 cursor-pointer">
+            <img src="./assets/workIcon.svg" alt="" />
+          </li>
+          <!-- Search -->
+          <li class="h-[63px] cursor-pointer w-[63px]">
+            <img
+              class="searchIcon h-[63px] bg-blue-200 p-5 w-[63px] rounded-full shadow-lg p-0"
+              src="./assets/search.svg"
+              alt=""
+            />
+          </li>
+          <li class="p-4 cursor-pointer">
+            <img src="./assets/cameraIcon.svg" alt="" />
+          </li>
+          <li class="p-4 cursor-pointer">
+            <img src="./assets/profile.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+      <header class="flex items-center mb-4 justify-center w-full">
+        <div class="">
+          <a href="./page5.html">
+            <img
+              src="./assets/left.svg"
+              class="float-left p-2 bg-[#F1F1F1] rounded-md"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- Title -->
+        <h2 class="font-semibold text-[20px] w-full text-center">
+          What are your goals?
+        </h2>
+      </header>
+      <section>
+        <!-- Graph -->
+        <a href="./page7.html">
+          <div class="my-8 relative flex justify-center items-center">
+            <div class="line1">Good job</div>
+            <div class="line2">less then 320cal</div>
+            <img src="./assets/Chart Full.svg" alt="" />
+          </div>
+        </a>
+        <!-- Alert Message -->
+        <div
+          class="flex justify-start rounded-lg p-2 my-8 mb-14 alert-btn gap-3 items-center"
+        >
+          <img
+            src="./assets/alert-triangle.png"
+            class="shink-0 w-[20px] h-[20px]"
+            alt=""
+          />
+          <p class="font-medium text-[12.57px] leading-[20px]">
+            You've burned fewer calories than <br />
+            yesterday. Time to get moving!
+          </p>
+        </div>
+        <!-- Upcomming Workout -->
+        <div class="flex justify-between my-4">
+          <h2 class="font-semibold text-[16px]">Upcoming Workout</h2>
+          <p class="text-[12px] text-[#7F7F7F]">See more</p>
+        </div>
+        <ul class="my-4">
+          <li
+            class="flex justify-between p-4 shadow-box rounded-lg my-4 bg-white items-center"
+          >
+            <div class="flex gap-4">
+              <img src="./assets/Ellipse 53.svg" alt="" />
+              <div class="">
+                <p class="text=[12px] font-medium">Full Body Workout</p>
+                <p class="text-[#7F7F7F] font-medium text-[10px]">Today 3pm</p>
+              </div>
+            </div>
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="relative w-11 h-6 bg-blue-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </li>
+          <li
+            class="flex justify-between p-4 my-4 shadow-box rounded-lg bg-white items-center"
+          >
+            <div class="flex gap-4">
+              <img src="./assets/Ellipse2.svg" alt="" />
+              <div class="">
+                <p class="text=[12px] font-medium">Full Body Workout</p>
+                <p class="text-[#7F7F7F] font-medium text-[10px]">Today 3pm</p>
+              </div>
+            </div>
+            <label class="inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer" />
+              <div
+                class="relative w-11 h-6 bg-blue-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </li>
+        </ul>
+        <!-- What do you want to Train -->
+        <h2 class="font-semibold text-[16px] my-6">
+          What Do You Want to Train
+        </h2>
+        <div class="bg-blue-200 flex justify-between rounded-lg p-4">
+          <div class="">
+            <p class="text-[12px]">Full Body Workout</p>
+            <p class="text-[10px]">Arms</p>
+            <p class="text-[10px]">Chest</p>
+            <p class="text-[10px]">Biceps</p>
+            <p class="text-[10px]">Abs</p>
+            <p class="text-[10px]">Legs</p>
+          </div>
+          <div class="">
+            <img src="./assets/Ellipse3.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 7</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="relative overflow-scroll">
+      <section class="sub-container">
+        <!-- Bottom Nav bar -->
+        <nav class="w-screen bg-[#ffffff] fixed shadow-sm bottom-0 z-20 left-0">
+          <ul class="flex justify-evenly relative items-center w-full p-1">
+            <li class="p-4 cursor-pointer">
+              <img src="./assets/homeIcon.svg" alt="" />
+            </li>
+            <li class="p-4 cursor-pointer">
+              <img src="./assets/workIcon.svg" alt="" />
+            </li>
+            <li class="h-[63px] cursor-pointer w-[63px]">
+              <img
+                class="searchIcon h-[63px] bg-blue-200 p-5 w-[63px] rounded-full shadow-lg p-0"
+                src="./assets/search.svg"
+                alt=""
+              />
+            </li>
+            <li class="p-4 cursor-pointer">
+              <img src="./assets/cameraIcon.svg" alt="" />
+            </li>
+            <li class="p-4 cursor-pointer">
+              <img src="./assets/profile.svg" alt="" />
+            </li>
+          </ul>
+        </nav>
+        <header class="flex items-center justify-center w-full">
+          <div class="">
+            <a href="./page6.html">
+              <img
+                src="./assets/left.svg"
+                class="float-left p-2 bg-[#F1F1F1] rounded-md"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- title -->
+          <h2 class="font-semibold text-[20px] w-full text-center">
+            Workout Schedule
+          </h2>
+        </header>
+        <!-- month year -->
+        <div class="flex">
+          <img src="./assets/left.svg" alt="left arrow" />
+          <p class="font-semibold text-[12px] m-4">Feb 2024</p>
+          <img src="./assets/right.svg" alt="right arrow" />
+        </div>
+        <!-- date -->
+        <ul class="flex justify-evenly gap-2 items-center">
+          <li
+            class="font-semibold text-center p-2 w-[63px] h-[74px] rounded-lg"
+          >
+            <p class="text-[11.39px]">Sun</p>
+            <p class="text-[28.46px]">5</p>
+          </li>
+          <li
+            class="font-semibold text-center p-2 gradian-btn text-white w-[63px] h-[74px] rounded-lg"
+          >
+            <p class="text-[11.39px]">Mon</p>
+            <p class="text-[28.46px]">6</p>
+          </li>
+          <li
+            class="font-semibold text-center p-2 w-[63px] h-[74px] rounded-lg"
+          >
+            <p class="text-[11.39px]">Tue</p>
+            <p class="text-[28.46px]">7</p>
+          </li>
+          <li
+            class="font-semibold text-center p-2 w-[63px] h-[74px] rounded-lg"
+          >
+            <p class="text-[11.39px]">Wed</p>
+            <p class="text-[28.46px]">8</p>
+          </li>
+          <li
+            class="font-semibold text-center p-2 w-[63px] h-[74px] rounded-lg"
+          >
+            <p class="text-[11.39px]">Thu</p>
+            <p class="text-[28.46px]">9</p>
+          </li>
+        </ul>
+        <!-- add button -->
+        <button
+          class="add-btn p-4 fixed text-white h-[63px] w-[63px] flex justify-center items-center rounded-full text-[36px]"
+        >
+          +
+        </button>
+      </section>
+      <section>
+        <!-- time period -->
+        <ul class="flex flex-col mb-[65px] w-screen">
+          <li class="time-period font-semibold">06:00 Am</li>
+          <li class="time-period font-semibold">07:00 Am</li>
+          <li class="time-period font-semibold">
+            08:00 Am
+            <span class="notes notes1 rounded-full">Ab Workout, 7:30am</span>
+          </li>
+          <li class="time-period font-semibold">
+            09:00 Am
+            <span class="notes notes2 rounded-full"
+              >Upperbody Workout, 9am</span
+            >
+            <span class="blue-line"></span>
+          </li>
+          <li class="time-period font-semibold">10:00 Am</li>
+          <li class="time-period font-semibold">11:00 Am</li>
+          <li class="time-period font-semibold">12:00 Pm</li>
+          <li class="time-period font-semibold">01:00 Pm</li>
+          <li class="time-period font-semibold">
+            02:00 Pm
+            <span class="notes notes3 rounded-full"
+              >Lowerbody Workout, 3pm</span
+            >
+          </li>
+          <li class="time-period font-semibold">03:00 Pm</li>
+          <li class="time-period font-semibold">04:00 Pm</li>
+          <li class="time-period font-semibold">05:00 Pm</li>
+          <li class="time-period font-semibold">06:00 Pm</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
